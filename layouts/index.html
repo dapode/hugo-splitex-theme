@@ -1,6 +1,8 @@
 {{ define "main" }}
-  <!-- Bio -->
-  {{ partial "bio" . }}
+  <!-- Main -->
+  <div class="split-main">
+      {{ .Content }}
+  </div>
 
   <!-- Links -->
   {{ partial "links" . }}

@@ -1,0 +1,16 @@
+<div class="split-list-gallery">
+  <ul>
+    {{ range .Paginator.Pages.ByDate }}
+      <li>
+          <a href="{{ .Params.image | absURL }}">
+          {{ if .Params.Cover }}
+              <img src="{{ .Params.Cover | absURL }}" alt="{{ .Title | plainify | default " " }}" />
+          {{ else }}
+              <h3>{{ .Params.Title }}</h3>
+          {{ end }}
+          </a>
+          <p>{{ .Summary | markdownify }}</p>
+      </li>
+    {{ end }}
+  </ul>
+</div>

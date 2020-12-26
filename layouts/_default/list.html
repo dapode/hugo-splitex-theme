@@ -1,3 +1,19 @@
-{{ define "main" }}
+{{ define "top" }}
+    {{ partial "top.html" }}
+{{ end }}
 
+{{ define "main" }}
+  {{ with .Content }}
+    <div class="split-main">
+      {{ . }}
+    </div>
+  {{ end }}
+  <div class="split-lists">
+      {{ if .Params.gallery }}
+        {{ partial "gallery.html" . }}
+      {{ else }}
+        {{ partial "posts.html" . }}
+      {{ end }}
+  </div>
+  {{ partial "pagination.html" . }}
 {{ end }}

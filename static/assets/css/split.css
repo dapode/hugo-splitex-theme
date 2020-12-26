@@ -108,21 +108,21 @@ a:hover {
   }
 }
 html {
-  background-color: #061C30;
+  background-color: #e8e8e8;
 }
 
 body.page-template-page-fullsingle-split {
-  background-color: #061C30;
+  background-color: #e8e8e8;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 33px;
   letter-spacing: -0.2px;
-  color: #848d96;
+  color: #222222;
   animation: fadein 2s;
 }
 body.page-template-page-fullsingle-split p {
-  color: #848d96;
+  color: #222222;
 }
 
 .fs-split {
@@ -137,7 +137,7 @@ body.page-template-page-fullsingle-split p {
   }
 }
 .fs-split .split-image {
-  width: 50%;
+  width: 40%;
   height: 100vh;
   background-size: cover;
 }
@@ -148,7 +148,7 @@ body.page-template-page-fullsingle-split p {
   }
 }
 .fs-split .split-content {
-  width: 50%;
+  width: 60%;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -163,7 +163,6 @@ body.page-template-page-fullsingle-split p {
 }
 .fs-split .split-content .split-content-vertically-center {
   padding: 80px;
-  max-width: 640px;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -191,171 +190,244 @@ body.page-template-page-fullsingle-split p {
   line-height: 16px;
   margin-bottom: 40px;
   letter-spacing: 0.4px;
-  color: #47bec7;
+  color: #990033;
 }
 .split-intro .tagline {
   color: #CCCCCC;
 }
 
-.split-bio {
+.split-main {
   padding: 40px 0 20px 0;
   font-family: "Lora", serif;
+  text-align: justify;
 }
 @media (max-width: 1200px) {
-  .split-bio {
+  .split-main {
     padding: 30px 0 10px 0;
   }
 }
 @media (max-width: 800px) {
-  .split-bio {
+  .split-main {
     padding: 20px 0 0 0;
   }
 }
-.split-bio p {
-  color: #848d96;
+.split-main p {
+  color: #222222;
   margin-bottom: 20px;
   line-height: inherit;
 }
-.split-bio a {
-  color: #848d96;
+.split-main a {
+  color: #222222;
   transition-duration: 0.5s;
-  border-bottom: 1px dotted #848d96;
+  border-bottom: 1px dotted #222222;
 }
-.split-bio a:hover {
-  color: #CA486d;
+.split-main a:hover {
+  color: #990033;
   transition-duration: 0.1s;
-  border-bottom: 1px dotted #CA486d;
+  border-bottom: 1px dotted #990033;
 }
-.split-bio em,
-.split-bio i {
+.split-main em,
+.split-main i {
   font-style: italic;
   line-height: inherit;
 }
-.split-bio strong,
-.split-bio b {
+.split-main strong,
+.split-main b {
   font-weight: bold;
   line-height: inherit;
 }
-.split-bio small {
+.split-main small {
   font-size: 80%;
   line-height: inherit;
 }
-.split-bio h1, .split-bio .h1,
-.split-bio h2, .split-bio .h2,
-.split-bio h3, .split-bio .h3,
-.split-bio h4, .split-bio .h4,
-.split-bio h5, .split-bio .h5,
-.split-bio h6, .split-bio .h6 {
+.split-main h1, .split-main .h1,
+.split-main h2, .split-main .h2,
+.split-main h3, .split-main .h3,
+.split-main h4, .split-main .h4,
+.split-main h5, .split-main .h5,
+.split-main h6, .split-main .h6 {
   font-style: normal;
   font-weight: normal;
   color: inherit;
 }
-.split-bio h1 small, .split-bio .h1 small,
-.split-bio h2 small, .split-bio .h2 small,
-.split-bio h3 small, .split-bio .h3 small,
-.split-bio h4 small, .split-bio .h4 small,
-.split-bio h5 small, .split-bio .h5 small,
-.split-bio h6 small, .split-bio .h6 small {
+.split-main h1 small, .split-main .h1 small,
+.split-main h2 small, .split-main .h2 small,
+.split-main h3 small, .split-main .h3 small,
+.split-main h4 small, .split-main .h4 small,
+.split-main h5 small, .split-main .h5 small,
+.split-main h6 small, .split-main .h6 small {
   line-height: 0;
 }
-.split-bio h1, .split-bio .h1 {
+.split-main h1, .split-main .h1 {
   font-size: 1.5em;
   line-height: inherit;
   margin-top: 0;
   margin-bottom: 20px;
 }
-.split-bio h2, .split-bio .h2 {
+.split-main h2, .split-main .h2 {
   font-size: 1.25em;
   line-height: inherit;
   margin-top: 0;
   margin-bottom: 20px;
 }
-.split-bio h3, .split-bio .h3 {
+.split-main h3, .split-main .h3 {
   font-size: 1.1875em;
   line-height: inherit;
   margin-top: 0;
   margin-bottom: 20px;
 }
-.split-bio h4, .split-bio .h4 {
+.split-main h4, .split-main .h4 {
   font-size: 1.125em;
   line-height: inherit;
   margin-top: 0;
   margin-bottom: 20px;
 }
-.split-bio h5, .split-bio .h5 {
+.split-main h5, .split-main .h5 {
   font-size: 1.0625em;
   line-height: inherit;
   margin-top: 0;
   margin-bottom: 20px;
 }
-.split-bio h6, .split-bio .h6 {
+.split-main h6, .split-main .h6 {
   font-size: 1em;
   line-height: inherit;
   margin-top: 0;
   margin-bottom: 20px;
 }
-.split-bio ul,
-.split-bio ol,
-.split-bio dl {
+.split-main ul,
+.split-main ol,
+.split-main dl {
   margin-bottom: 20px;
   list-style-position: outside;
   line-height: inherit;
 }
-.split-bio li {
+.split-main li {
   font-size: inherit;
 }
-.split-bio ul {
+.split-main ul {
   margin-left: 2.25em;
   list-style-type: disc;
 }
-.split-bio ol {
+.split-main ol {
   margin-left: 2.25em;
   list-style-type: decimal;
 }
-.split-bio ul ul, .split-bio ol ul, .split-bio ul ol, .split-bio ol ol {
+.split-main ul ul, .split-main ol ul, .split-main ul ol, .split-main ol ol {
   margin-left: 1.25em;
   margin-bottom: 0;
 }
-.split-bio dl dt {
+.split-main dl dt {
   margin-bottom: 10px;
   font-weight: bold;
 }
-.split-bio dl dd {
+.split-main dl dd {
   margin-bottom: 10px;
 }
 
-.split-lists .split-list {
-  width: 30%;
+.split-lists [class*="split-list-"] {
   display: inline-block;
   margin-bottom: 40px;
   vertical-align: top;
 }
 @media (max-width: 500px) {
-  .split-lists .split-list {
+  .split-lists [class*="split-list-"] {
     width: 90%;
   }
 }
-.split-lists .split-list h3 {
+.split-lists [class*="split-list-"] h3 {
   font-weight: 400;
   text-transform: uppercase;
   font-size: 11px;
   line-height: 11px;
   margin-bottom: 31px;
-  color: #848d96;
+  color: #222222;
   letter-spacing: 2px;
   opacity: 0.5;
 }
-.split-lists .split-list ul li {
+.split-lists [class*="split-list-"] ul li {
   font-size: 16px;
+  line-height: 16px;
+}
+.split-lists [class*="split-list-"] ul li a {
+  color: #222222;
+  transition-duration: 0.5s;
+}
+.split-lists [class*="split-list-"] ul li a:hover {
+  color: #990033;
+  transition-duration: 0.1s;
+}
+.split-lists .split-list-posts ul li {
+  margin-bottom: 30px;
+}
+.split-lists .split-list-posts p {
+  color: #999999;
+  margin-left: 20px;
+  font-size: 14px;
+}
+.split-list-posts .split-post-cover img{
+    width: 50%;
+    border: 1px black solid;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+
+ .split-lists .split-list-gallery p {
+     opacity: 0.5;
+     font-size: 14px;
+ }
+
+ .split-lists .split-list-gallery img {
+      width: 80%;
+      border: 1px black solid;
+      padding: 5px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+}
+.split-lists .split-list-gallery img:hover {
+          border: 1px #990033 solid;
+}
+
+.split-lists .split-list-menu {
+  width: 30%;
+}
+.split-lists .split-list-menu ul li {
+  margin-bottom: 12px;
+}
+.split-date {
+  font-size: 12px;
   line-height: 16px;
   margin-bottom: 12px;
 }
-.split-lists .split-list ul li a {
-  color: #848d96;
+
+.split-button a {
+  color: #222222;
+  transition-duration: 0.5s;
+  font-size: 20px;
+  font-weight: 100;
+}
+.split-button a:hover {
+  color: #990033;
+  transition-duration: 0.1s;
+}
+.split-top {
+    margin-bottom: 50px;
+}
+.split-top a {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 11px;
+  margin-bottom: 60px;
+  margin-right: 20px;
+  color: #222222;
+  letter-spacing: 2px;
+  opacity: 0.5;
   transition-duration: 0.5s;
 }
-.split-lists .split-list ul li a:hover {
-  color: #CA486d;
+.split-top a:hover {
+  color: #990033;
   transition-duration: 0.1s;
 }
 
@@ -367,7 +439,7 @@ body.page-template-page-fullsingle-split p {
   line-height: 14px;
 }
 .split-credit p a {
-  color: #848d96;
+  color: #222222;
 }
 
 .split-video {

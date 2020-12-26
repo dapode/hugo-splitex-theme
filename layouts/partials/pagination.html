@@ -1,0 +1,12 @@
+<div class="pagination">
+    {{ if .Paginator.HasPrev }}
+        <span class="split-button">
+            <a href="{{ .Paginator.Prev.URL }}">←</a>
+        </span>
+    {{ end }}
+    {{ if .Paginator.HasNext }}
+        <span class="split-button">
+            <a href="{{ .Paginator.Next.URL }}">→</a>
+        </span>
+    {{ end }}
+</div>

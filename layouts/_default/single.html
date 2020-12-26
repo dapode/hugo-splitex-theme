@@ -1,3 +1,9 @@
-{{ define "main" }}
+{{ define "top" }}
+    {{ partial "top.html" }}
+{{ end }}
 
+{{ define "main" }}
+    <div class="split-main">
+      {{ .Content }}
+    </div>
 {{ end }}

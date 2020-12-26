@@ -1,0 +1,16 @@
+<div class="split-list-posts">
+  <ul>
+    {{ range .Paginator.Pages.ByDate }}
+      <li>
+          <span class="split-date">{{ .Date.Format "2006-01-02" }}</span>
+          <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+          <div  class="split-post-cover">
+          {{ if .Params.Cover }}
+              <img src="{{ .Params.Cover | absURL }}" alt="{{ .Title | plainify | default " " }}" />
+          {{ end }}
+          </div>
+          <p>{{ .Summary | markdownify }}</p>
+      </li>
+    {{ end }}
+  </ul>
+</div>
