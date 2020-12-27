@@ -115,7 +115,7 @@ body.page-template-page-fullsingle-split {
   background-color: #e8e8e8;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 33px;
   letter-spacing: -0.2px;
   color: #222222;
@@ -199,6 +199,7 @@ body.page-template-page-fullsingle-split p {
 .split-main {
   padding: 40px 0 20px 0;
   font-family: "Lora", serif;
+  font-size: 16px;
   text-align: justify;
 }
 @media (max-width: 1200px) {
@@ -359,11 +360,12 @@ body.page-template-page-fullsingle-split p {
 .split-lists .split-list-posts ul li {
   margin-bottom: 30px;
 }
-.split-lists .split-list-posts p {
-  color: #999999;
+.split-list-posts .split-post-summary{
+  color: #999;
   margin-left: 20px;
   font-size: 14px;
 }
+
 .split-list-posts .split-post-cover img{
     width: 50%;
     border: 1px black solid;
@@ -373,7 +375,19 @@ body.page-template-page-fullsingle-split p {
     margin-bottom: 10px;
  }
 
- .split-lists .split-list-gallery p {
+.split-post-content {
+   color: #222;
+   font-size: 16px;
+   margin: 20px;
+}
+.split-post-content iframe {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px #990033 solid;
+}
+
+.split-lists .split-list-gallery p {
      opacity: 0.5;
      font-size: 14px;
  }

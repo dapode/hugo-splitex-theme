@@ -9,7 +9,13 @@
               <img src="{{ .Params.Cover | absURL }}" alt="{{ .Title | plainify | default " " }}" />
           {{ end }}
           </div>
-          <p>{{ .Summary | markdownify }}</p>
+            {{ if .CurrentSection.Params.Full }}
+            <div class="split-post-content">
+                {{ .Content }}
+            </div>
+            {{ else }}
+                <p class="split-post-summary">{{ .Summary | markdownify }}</p>
+            {{ end }}
       </li>
     {{ end }}
   </ul>
