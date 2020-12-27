@@ -406,10 +406,12 @@ body.page-template-page-fullsingle-split p {
   transition-duration: 0.5s;
   font-size: 20px;
   font-weight: 100;
+  margin-right: 20px;
 }
+
 .split-button a:hover {
   color: #990033;
-  transition-duration: 0.1s;
+  transition-duation: 0.1s;
 }
 .split-top {
     margin-bottom: 50px;
